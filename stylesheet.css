@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,24 +10,54 @@ body {
     font-size: 16px;
 }
 
-.box1 {
+.box1,
+.box2 {
     position: relative;
     display: block;
     left: 50%;
-    top: 100%;
     transform: translateX(-50%);
     width: 25%;
+    text-align: center;
 }
 
 .content1 {
     position: relative;
-    text-align: center;
     border: .2px solid #DBDBDB;
+    padding: 15px 15px;
+    margin-top: 10px;
 }
 
 .box1 #logo {
     align-items: center;
     position: relative;
-    width: 13rem;
-    margin: 0 auto;
+    width: 12.5rem;
+    padding-bottom: 30px;
+}
+
+.box2 {
+    border: .2px solid #DBDBDB;
+    margin-top: 10px;
+    padding: 15px 15px;
+}
+
+input {
+    background-color: #E8F1FE;
+    border: .2px solid #DBDBDB;
+    width: 80%;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 10px 2px;
+    margin: 3px 0;
+}
+
+.btn {
+    background-color: #0095F6;
+    border: none;
+    width: 80%;
+    padding: 7.5px;
+    margin: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: .87rem;
 }
