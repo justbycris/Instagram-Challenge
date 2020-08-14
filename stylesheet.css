@@ -8,10 +8,12 @@
 body {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
+    background-color: #FAFAFA;
 }
 
 .box1,
-.box2 {
+.box2,
+.bottom {
     position: relative;
     display: block;
     left: 50%;
@@ -55,9 +57,20 @@ input {
     border: none;
     width: 80%;
     padding: 7.5px;
-    margin: 10px;
+    margin: 10px 10px 15px 10px;
     border-radius: 4px;
     color: #ffffff;
     font-weight: 600;
     font-size: .87rem;
+}
+
+.bottom {}
+
+#apple,
+#google {
+    width: 40%;
+}
+
+.bottom {
+    margin: 15px;
 }
