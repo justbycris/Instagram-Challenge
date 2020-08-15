@@ -9,6 +9,9 @@ body {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     background-color: #FAFAFA;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 .box1,
@@ -39,7 +42,8 @@ body {
 .box2 {
     border: .2px solid #DBDBDB;
     margin-top: 10px;
-    padding: 15px 15px;
+    padding: 20px 20px;
+    background-color: #ffffff;
 }
 
 input {
@@ -52,11 +56,40 @@ input {
     margin: 3px 0;
 }
 
+input::placeholder {
+    font-size: 10px;
+    color: #8f8f8f;
+    margin-bottom: -203px;
+}
+
+#pssw {
+    width: 62.3%;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#psswrd-btn {
+    background-color: white;
+    font-size: 14px;
+    color: #262626;
+    display: inline;
+    font-weight: bold;
+    padding: 9.3px 10px 10px 10px;
+    margin: 3px 0;
+    border-top: 1.2px solid #DBDBDB;
+    border-bottom: 1.2px solid #DBDBDB;
+    border-right: 1.2px solid #DBDBDB;
+    border-left: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
 .btn {
     background-color: #0095F6;
     border: none;
     width: 80%;
-    padding: 7.5px;
+    padding: 6px;
     margin: 10px 10px 15px 10px;
     border-radius: 4px;
     color: #ffffff;
@@ -64,13 +97,79 @@ input {
     font-size: .87rem;
 }
 
-.bottom {}
-
 #apple,
 #google {
-    width: 40%;
+    width: 38%;
+    margin: 0 2px;
 }
 
 .bottom {
-    margin: 15px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#fblogo {
+    width: 5%;
+    display: inline-block;
+    margin: -3px 3px;
+}
+
+.separator {
+    color: #999999;
+    margin-top: 2px;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    position: absolute;
+    background-color: #eee;
+    height: 1px;
+    top: 50%;
+    width: 40%;
+    transform: translateY(-50%);
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+footer {
+    padding: 5rem 0;
+}
+
+footer .container {
+    display: inline-flex;
+    justify-content: space-between;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .7rem;
+    margin-top: 0;
+    margin-left: 230px;
+}
+
+footer .container ul {
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+footer .container ul li {
+    color: #01386A;
+    padding: 10px;
+    display: inline;
+}
+
+.copyright {
+    color: #999999;
+    display: inline;
+    font-size: .7rem;
+    font-weight: bolder;
 }
